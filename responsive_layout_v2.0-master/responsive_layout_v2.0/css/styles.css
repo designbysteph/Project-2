@@ -1,0 +1,420 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* { box-sizing: border-box;}
+
+body {
+  background-color: #f2f2f2;
+  color: #404040;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+a {
+  color: #404040;
+}
+
+h1 {
+  margin-top: 0;
+  padding-top: 0.75em;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 1.5em;
+}
+
+p {
+  text-align: center;
+  line-height: 1.75;
+}
+
+.details {
+  font-weight: 300;
+  font-size: 0.9em;
+  color: #ea6868;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Typography---- */
+
+.name {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.portfolio-title {
+  text-align: center;
+}
+
+.intro {
+  width: 90%;
+  margin: 1.5em auto;
+}
+
+.name-footer {
+  font-size: 1.25em;
+  float: left;
+  margin-top: 0;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-weight: 400;
+}
+
+/* ---- Navigation ---- */
+
+.main-header {
+  text-align: center;
+}
+
+.main-nav {
+  margin: 1.5em 1em 0 1em;
+}
+
+.main-nav li {
+  background-color: white;
+  margin-top: 0.5em;
+  padding: 15px 15px;
+}
+
+.main-nav li a {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #404040;
+}
+
+.main-nav li a:hover,
+.footer-nav li a:hover {
+  color: #ea6868;
+}
+
+.footer-nav li a {
+  display: none;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-wrapper {
+  background-color: #fff;
+  padding: 3em 0 3em 0;
+  /* background-color: lightblue; */
+}
+
+.col {
+  padding: 2em 1.25em 0 1.25em;
+  margin-top: 0;
+}
+
+.col p {
+  width: 90%;
+  height: 90px;
+  margin: auto;
+ }
+
+.banner {
+  padding: 3em 1em 2em 1em;
+}
+
+.contact {
+  padding: 3em 1em 2em 1em;
+}
+
+.contact-wrapper {
+  height: 225px;
+}
+
+.main-footer {
+  border-top: 1px solid lightgrey;
+  padding: 1.5em 0 1em 0;
+  margin: 0 1em 0 1em;
+}
+
+/* ---- Skills section---- */
+
+.skills-wrapper {
+  /* outline: 1px red solid; */
+  background-color: #fff;
+  margin-top: 2em;
+  padding: 3em 0 3em 0;
+}
+
+.circle {
+  padding: 2em 1.25em 0 1.25em;
+  margin-top: 1em;
+}
+
+.skills-image {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: block;
+}
+
+.circle p {
+  /* outline: 1px black solid; */
+  width: 90%;
+  height: 25px;
+  margin: auto;
+}
+
+/* ---- Other Links ---- */
+.top {
+  float: right;
+  font-weight: 800;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.skills {
+  display: inline-block;
+  color: #ea6868;
+  padding-top: 0.75em;
+  margin-top: 1em;
+}
+
+/* ---- Images ---- */
+.profile-pic {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* ---- Float clearfix ---- */
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* =================================
+  MEDIA QUERIES
+==================================== */
+
+/* ---- TABLET ---- */
+@media (min-width: 768px) {
+
+ /* ---- Navigation ---- */
+
+.main-nav {
+  margin: 0 auto;
+}
+
+.main-nav li{
+   background-color: #f2f2f2;
+   display: inline-block;
+   padding: 0 1.25em;
+ }
+
+ /* ---- Layout Containers ---- */
+
+.header-wrapper,
+.banner-wrapper,
+.main-wrapper {
+   width: 90%;
+   margin: 0 auto;
+ }
+
+.banner {
+   padding: 5em 0 4em 0;
+ }
+
+.two, .four, .six {
+   width: 50%;
+   float: left;
+   padding: 2em 0.35em 0 1.25em;
+ }
+
+.three, .five, .seven {
+   width: 50%;
+   float: right;
+   padding: 2em 1.25em 0 0.35em;
+ }
+
+.col p {
+     width: 85%;
+     height: 90px;
+     margin: auto;
+ }
+
+.contact-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+/* ---- Footer ---- */
+
+.footer-nav {
+  float: right;
+}
+
+.footer-nav li{
+  display: inline-block;
+  float: left;
+}
+
+.footer-nav li a {
+  display: inline-block;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #404040;
+  padding-left: 1.25em;
+}
+
+.top { display: none; }
+
+.main-footer {
+  padding: 1.5em 0 4em 0;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+/* ---- Typography---- */
+
+p {font-size: 0.85em;}
+
+p.intro {
+  float: left;
+  width: 60%;
+  height: auto;
+  text-align: left;
+  margin: 0;
+  font-size: 1em;
+  padding-right: 1em;
+  max-width: 450px;
+}
+
+h3 { margin: 1em 0 0.5em 0; }
+
+p span {
+  font-size: 1em;
+}
+
+/* ---- Other Links ---- */
+
+.skills {
+  padding-top: 0.25em;
+  margin-top: 0.3em;
+}
+
+/* ---- Images ---- */
+
+.profile-pic {
+  display: inline-block;
+  float: right;
+  width: 40%;
+}
+
+/* ---- Float clearfix ---- */
+
+ .clearfix::after {
+   content: " ";
+   display: table;
+   clear: both;
+ }
+
+}
+
+/* ---- LARGE SCREEN ---- */
+@media (min-width: 1024px) {
+
+p.intro {
+  max-width: 650px;
+  padding-right: 2em;
+}
+
+/* ---- Navigation ---- */
+
+.main-header {
+  padding-top: 4em;
+  padding-bottom: 0.5em;
+}
+.name {
+  display: inline-block;
+  float: left;
+  padding-top: 0;
+}
+
+.main-nav {
+  float: right;
+}
+
+.main-nav li:last-child {
+  padding-right: 0;
+}
+
+/* ---- Layout Containers ---- */
+
+.header-wrapper,
+.banner-wrapper,
+.main-wrapper,
+.contact-wrapper {
+  max-width: 1150px;
+}
+
+.contact-wrapper {
+  max-width: 650px;
+}
+
+.main-wrapper {
+  width: 95%;
+}
+
+.two, .three, .four, .five, .six, .seven {
+  width: 33.33%;
+}
+
+.two, .three, .five, .six {
+  float: left;
+  margin-right: 0;
+  padding: 2em 0.35em 0 0.35em;
+}
+
+.four, .seven {
+  float: right;
+  margin-right: 0;
+  padding: 2em 0.35em 0 0.35em;
+}
+
+/* ---- Other Links ---- */
+
+.skills {
+  border-top: 1px lightgrey solid;
+  padding-top: 1em;
+  margin-top: 2em;
+}
+
+/* ---- Footer ---- */
+
+.main-footer {
+  width: 92.5%;
+}
+
+.footer-nav li a {
+  font-size: 0.9em;
+}
+
+}
