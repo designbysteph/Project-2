@@ -152,15 +152,14 @@ img {
 /* ---- Skills section---- */
 
 .skills-wrapper {
-  /* outline: 1px red solid; */
+  /* outline: 1px green solid; */
   background-color: #fff;
   margin-top: 2em;
   padding: 3em 0 3em 0;
 }
 
 .circle {
-  padding: 2em 1.25em 0 1.25em;
-  margin-top: 1em;
+  padding: 1em 1.25em 0 1.25em;
 }
 
 .skills-image {
@@ -172,9 +171,8 @@ img {
 }
 
 .circle p {
-  /* outline: 1px black solid; */
   width: 90%;
-  height: 25px;
+  height: 70px;
   margin: auto;
 }
 
@@ -231,7 +229,8 @@ img {
 
 .header-wrapper,
 .banner-wrapper,
-.main-wrapper {
+.main-wrapper,
+.skills-wrapper {
    width: 90%;
    margin: 0 auto;
  }
@@ -257,6 +256,25 @@ img {
      height: 90px;
      margin: auto;
  }
+
+.skills-wrapper {
+  padding-top: 0;
+  padding-bottom: 2em;
+}
+
+
+.branding,
+.laundry {
+  width: 50%;
+  float: right;
+  padding: 2em 0.35em 0 1.25em;
+}
+
+.type,
+.ui {
+  width: 50%;
+  padding: 2em 0.35em 0 1.25em;
+}
 
 .contact-wrapper {
   width: 80%;
@@ -371,7 +389,8 @@ p.intro {
 .header-wrapper,
 .banner-wrapper,
 .main-wrapper,
-.contact-wrapper {
+.contact-wrapper,
+.skills-wrapper {
   max-width: 1150px;
 }
 
@@ -398,6 +417,13 @@ p.intro {
   margin-right: 0;
   padding: 2em 0.35em 0 0.35em;
 }
+
+.circle {
+  width: 25%;
+  float: left;
+  padding-bottom: 1.5em;
+}
+
 
 /* ---- Other Links ---- */
 
